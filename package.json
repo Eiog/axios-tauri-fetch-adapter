@@ -1,18 +1,18 @@
 {
-  "name": "typescript-starter",
+  "name": "axios-tauri-fetch-adapter",
   "type": "module",
-  "version": "0.1.0-beta.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": " Tauri Fetch Adapter for Axios",
   "author": "Eiog",
   "license": "MIT",
-  "homepage": "https://github.com/Eiog/typescript-starter",
+  "homepage": "https://github.com/Eiog/axios-tauri-fetch-adapter",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Eiog/typescript-starter.git"
+    "url": "git@github.com:Eiog/axios-tauri-fetch-adapter.git"
   },
-  "bugs": "https://github.com/Eiog/typescript-starter/issues",
+  "bugs": "https://github.com/Eiog/axios-tauri-fetch-adapter/issues",
   "keywords": [
-    "typescript-starter"
+    "axios-tauri-fetch-adapter"
   ],
   "sideEffects": false,
   "exports": {
@@ -46,6 +46,11 @@
     "link": "pnpm link --global",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "npx simple-git-hooks"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-http": "^2.0.1",
+    "axios": "^1.7.7",
+    "mime": "^4.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
