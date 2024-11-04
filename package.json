@@ -1,7 +1,7 @@
 {
   "name": "axios-tauri-fetch-adapter",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": " Tauri Fetch Adapter for Axios",
   "author": "Eiog",
   "license": "MIT",
@@ -44,8 +44,7 @@
     "cz": "czg",
     "commit": "git pull && git add -A && pnpm cz && git push",
     "link": "pnpm link --global",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@tauri-apps/plugin-http": "^2.0.1",
